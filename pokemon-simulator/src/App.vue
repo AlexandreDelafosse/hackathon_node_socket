@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Hello World!"/>
+    <HeaderMain/>
+    <!-- <HelloWorld msg="Hello World!"/> -->
+    <FormSignup/>
+    <FooterMain/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import HeaderMain from './components/layouts/Header.vue'
+import FooterMain from './components/layouts/Footer.vue'
+import FormSignup from './components/FormSignup.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderMain,
+    FooterMain,
+    FormSignup
   }
 }
 </script>
